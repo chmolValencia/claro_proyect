@@ -1,0 +1,23 @@
+export class RegistroFhu {
+  id: number | undefined;
+  datos: string | undefined;
+  codigo: string | undefined;
+  nombre: string | undefined;
+  como: string | undefined;
+  necesito: string | undefined;
+  para: string | undefined;
+  criteriosAceptacion: string | undefined;
+  requerimientosNoFuncionales: string | undefined;
+  datosEntrada: string | undefined;
+  datosSalida: string | undefined;
+  servicios: string | undefined;
+  notas: string | undefined;
+  disponibilidad: string | undefined;
+  funcionalidad: string | undefined;
+  confidencialidad: string | undefined;
+  pbi: string | undefined;
+  cliente: string | undefined;
+  servicioIT: string | undefined;
+  flujoValor: string | undefined;
+  naturalezaNovedad: string | undefined;
+}

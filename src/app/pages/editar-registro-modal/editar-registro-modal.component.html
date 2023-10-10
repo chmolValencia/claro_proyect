@@ -1,0 +1,96 @@
+<!-- loader -->
+<div class="col m12" [ngClass]="{'loaded':!loaded}">
+  <div class="row">
+      <div id="loader-wrapper">
+          <div id="loader"></div>
+          <div class="loader-section section-left"></div>
+          <div class="loader-section section-right"></div>
+      </div>
+  </div>
+</div>
+<!-- end loader -->
+<h2 mat-dialog-title class="dialog-title">Formato HU</h2>
+<mat-dialog-content>
+  <form [formGroup]="editarForm">
+      <mat-form-field>
+          <mat-label>Código:</mat-label>
+          <input matInput formControlName="codigo" placeholder="Código" readonly>
+      </mat-form-field>
+      <mat-form-field>
+          <mat-label>Nombre:</mat-label>
+          <input matInput formControlName="nombre" placeholder="Nombre" required>
+      </mat-form-field>
+      <mat-form-field>
+          <mat-label>Como:</mat-label>
+          <textarea matInput formControlName="como" placeholder="Como" maxlength="4000"></textarea>
+      </mat-form-field>
+      <mat-form-field>
+          <mat-label>Necesito:</mat-label>
+          <textarea matInput formControlName="necesito" placeholder="Necesito" maxlength="4000"></textarea>
+      </mat-form-field>
+      <mat-form-field>
+          <mat-label>Para:</mat-label>
+          <textarea matInput formControlName="para" placeholder="Para" maxlength="4000"></textarea>
+      </mat-form-field>
+      <mat-form-field>
+          <mat-label>Criterios de Aceptación:</mat-label>
+          <textarea matInput formControlName="criteriosAceptacion" placeholder="Criterios de Aceptación" maxlength="4000"></textarea>
+      </mat-form-field>
+      <mat-form-field>
+          <mat-label>Requerimientos No Funcionales:</mat-label>
+          <textarea matInput formControlName="requerimientosNoFuncionales" placeholder="Requerimientos No Funcionales" maxlength="4000"></textarea>
+      </mat-form-field>
+      <mat-form-field>
+          <mat-label>Datos de Entrada:</mat-label>
+          <textarea matInput formControlName="datosEntrada" placeholder="Datos de Entrada" maxlength="4000"></textarea>
+      </mat-form-field>
+      <mat-form-field>
+          <mat-label>Datos de Salida:</mat-label>
+          <textarea matInput formControlName="datosSalida" placeholder="Datos de Salida" maxlength="4000"></textarea>
+      </mat-form-field>
+      <mat-form-field>
+          <mat-label>Servicios:</mat-label>
+          <input matInput formControlName="servicios" placeholder="Servicios">
+      </mat-form-field>
+      <mat-form-field>
+          <mat-label>Notas:</mat-label>
+          <textarea matInput formControlName="notas" placeholder="Notas" maxlength="4000"></textarea>
+      </mat-form-field>
+      <mat-form-field>
+          <mat-label>Disponibilidad:</mat-label>
+          <textarea matInput formControlName="disponibilidad" placeholder="Disponibilidad" maxlength="4000"></textarea>
+      </mat-form-field>
+      <mat-form-field>
+          <mat-label>Funcionalidad:</mat-label>
+          <textarea matInput formControlName="funcionalidad" placeholder="Funcionalidad" maxlength="4000"></textarea>
+      </mat-form-field>
+      <mat-form-field>
+          <mat-label>Confidencialidad:</mat-label>
+          <textarea matInput formControlName="confidencialidad" placeholder="Confidencialidad" maxlength="4000"></textarea>
+      </mat-form-field>
+      <mat-form-field>
+          <mat-label>PBI:</mat-label>
+          <input matInput formControlName="pbi" placeholder="PBI">
+      </mat-form-field>
+      <mat-form-field>
+          <mat-label>Cliente:</mat-label>
+          <textarea matInput formControlName="cliente" placeholder="Cliente" maxlength="4000"></textarea>
+      </mat-form-field>
+      <mat-form-field>
+          <mat-label>Servicio IT:</mat-label>
+          <textarea matInput formControlName="servicioIT" placeholder="Servicio IT" maxlength="4000"></textarea>
+      </mat-form-field>
+      <mat-form-field>
+          <mat-label>Flujo de Valor:</mat-label>
+          <input matInput formControlName="flujoValor" placeholder="Flujo de Valor">
+      </mat-form-field>
+      <mat-form-field>
+          <mat-label>Naturaleza de la Novedad:</mat-label>
+          <textarea matInput formControlName="naturalezaNovedad" placeholder="Naturaleza de la Novedad" maxlength="4000"></textarea>
+      </mat-form-field>
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button (click)="cerrarModal()">Cancelar</button>
+  <button mat-button color="primary" (click)="guardarCambios()">Guardar</button>
+</mat-dialog-actions>

@@ -1,0 +1,458 @@
+/* Estilo para el botón de Editar */
+
+.editar-button {
+  background-color: #cf1515;
+  /* Color de fondo azul (puedes cambiarlo según tu preferencia) */
+  color: #fff;
+  /* Color del texto en blanco (puedes cambiarlo según tu preferencia) */
+  border: none;
+  /* Elimina el borde predeterminado del botón */
+  border-radius: 5px;
+  /* Redondea los bordes del botón */
+  padding: 10px 20px;
+  /* Ajusta el espaciado interno para que el botón sea más grande */
+  cursor: pointer;
+  /* Cambia el cursor al pasar por encima del botón */
+  transition: background-color 0.3s ease;
+  /* Agrega una transición suave para el color de fondo */
+  /* Establece los estilos cuando el botón está activo o en estado hover (opcional) */
+  &:hover,
+  &:active {
+      background-color: #ecd2d2;
+      /* Cambia el color de fondo al hacer hover o clic */
+  }
+}
+
+
+/* Estilo para el botón de Descargar */
+
+.descargar-button {
+  background-color: transparent;
+  /* Fondo transparente para ocultar el color de fondo predeterminado */
+  color: transparent;
+  /* Texto transparente para ocultar el texto predeterminado */
+  color: white;
+  /* Cambia el color del texto a blanco */
+  /* Agrega un ícono de Excel como fondo del botón */
+  background-image: url('../../../../assets/images/excel-logo-transparent-free.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 45px 45px;
+  /* Ajusta el tamaño del ícono según tus necesidades */
+  border: none;
+  /* Elimina el borde predeterminado del botón */
+  width: 45px;
+  /* Ajusta el ancho del botón según el tamaño del ícono */
+  height: 45px;
+  /* Ajusta la altura del botón según el tamaño del ícono */
+  /* Establece los estilos cuando el botón está activo o en estado hover (opcional) */
+  &:hover,
+  &:active {
+      background-color: transparent;
+      /* Fondo transparente al hacer hover o al hacer clic */
+  }
+}
+
+
+/* Establece los estilos cuando el botón está activo o en estado hover (opcional) */
+
+.descargar-button:hover,
+.descargar-button:active {
+  background-color: #23dd1d96;
+  border-radius: 50%;
+  /* Hace que el botón sea completamente redondo */
+  transition: background-color 0.3s ease;
+  /* Agrega una transición suave para el color de fondo */
+  cursor: pointer;
+  /* Cambia el cursor al pasar por encima del botón */
+  /* Cambia el color de fondo al hacer hover o al hacer clic */
+}
+
+
+/* Estilo para el contenedor de la tabla con desplazamiento */
+
+.table-container {
+  max-height: 400px;
+  /* Ajusta el valor según tus necesidades */
+  overflow-y: auto;
+}
+
+
+/* Clase para hacer que la tabla sea responsiva */
+
+.responsive-table {
+  overflow-x: auto;
+  max-width: 100%;
+  /* Ajusta el valor según tus necesidades */
+}
+
+
+/* Clase para hacer que el paginador sea responsivo */
+
+
+/* Estilo para la tabla con bordes en las celdas y alrededor de la tabla */
+
+
+/* Aplicar estilo al input */
+
+
+/* styles.css */
+
+
+/* styles.css */
+
+.consult-label {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-right: 10px;
+  /* Agrega esta línea */
+}
+
+.input-wrapper {
+  margin-bottom: 20px;
+}
+
+.custom-input {
+  color: red;
+  /* Color de texto rojo */
+  padding: 5px;
+  /* Espacio alrededor del input */
+  margin-top: 10px;
+  /* Espacio arriba del input */
+}
+
+.custom-table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+.custom-table th,
+.custom-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.custom-table th {
+  background-color: #f2f2f2;
+}
+
+.responsive-paginator {
+  display: flex;
+  justify-content: center;
+}
+
+.texto-centralizado {
+  text-align: center;
+  color: red;
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 2px;
+  margin-bottom: 25px;
+}
+
+t[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+*/ .container {
+  width: 90%;
+}
+
+
+/*
+h4{
+color: #2980B9;
+}
+*/
+
+.alinear {
+  text-align: end;
+}
+
+.botonGuardar {
+  margin-bottom: 0;
+  margin-right: 2.8vh;
+  margin-top: 0!important;
+}
+
+.col .row {
+  padding: 0em;
+  margin-right: 1em !important;
+}
+
+.sizeTable {
+  width: 96%;
+}
+
+.centerTable {
+  text-align: -webkit-center;
+}
+
+
+/* estilos tabla */
+
+caption {
+  background-color: #22355B;
+  color: white;
+  font-size: larger;
+}
+
+th {
+  padding: 3px;
+  text-align: center;
+  border-radius: 10%;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+th:last-child {
+  border-right: 0;
+}
+
+td {
+  font-size: small;
+  padding: 4px;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+td:last-child {
+  border-right: 0;
+}
+
+td,
+th {
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+
+.botonSeleccionar {
+  margin-top: 2em!important;
+}
+
+
+/********/
+
+.backgroundColor {
+  background-color: #D7DADD;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 5em;
+}
+
+.backgroundColorModal {
+  background-color: #D7DADD;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.btnColor {
+  background-color: #22355B;
+}
+
+.underLine {
+  border-bottom: 0;
+}
+
+.marginDiv {
+  margin: 0;
+  margin-bottom: 1em;
+  justify-content: space-between;
+}
+
+
+/** EFECTO DE ESPERA */
+
+
+/* ---------------preloader ---------------------- */
+
+#loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.no-js #loader-wrapper {
+  display: none;
+}
+
+#loader {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #16a085;
+  -webkit-animation: spin 1.7s linear infinite;
+  animation: spin 1.7s linear infinite;
+  z-index: 11;
+}
+
+#loader:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #e74c3c;
+  -webkit-animation: spin-reverse .6s linear infinite;
+  animation: spin-reverse .6s linear infinite;
+}
+
+#loader:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #f9c922;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+      -webkit-transform: rotate(0deg);
+  }
+  100% {
+      -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+  }
+  100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin-reverse {
+  0% {
+      -webkit-transform: rotate(0deg);
+  }
+  100% {
+      -webkit-transform: rotate(-360deg);
+  }
+}
+
+@keyframes spin-reverse {
+  0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+  }
+  100% {
+      -webkit-transform: rotate(-360deg);
+      transform: rotate(-360deg);
+  }
+}
+
+#loader-wrapper .loader-section {
+  position: fixed;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: #222;
+  z-index: 10;
+  opacity: 0.6;
+}
+
+#loader-wrapper .loader-section.section-left {
+  left: 0;
+}
+
+#loader-wrapper .loader-section.section-right {
+  right: 0;
+}
+
+.margin-right {
+  margin-right: 1em;
+}
+
+.visibilidadOculto {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.visibilidadMostrar {
+  visibility: visible;
+  opacity: 1;
+  transition: 2s;
+}
+
+
+/* color placeholder */
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #8c8e91;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #8c8e91;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #8c8e91;
+}
+
+
+/* Loaded styles */
+
+.loaded #loader-wrapper .loader-section.section-left {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.loaded #loader-wrapper .loader-section.section-right {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.loaded #loader {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+
+.loaded #loader-wrapper {
+  visibility: hidden;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  transition: all 0.3s 1s ease-out;
+}
+
+
+/* ---------------preloader fin ---------------------- */

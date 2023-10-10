@@ -1,0 +1,245 @@
+<div class="row">
+  <!-- loader -->
+  <div class="col m12" [ngClass]="{'loaded':!loaded}">
+      <div class="row">
+          <div id="loader-wrapper">
+              <div id="loader"></div>
+              <div class="loader-section section-left"></div>
+              <div class="loader-section section-right"></div>
+          </div>
+      </div>
+  </div>
+  <!-- end loader -->
+  <div class="col-12">
+      <div class="card">
+          <div class="card-body">
+              <div class="row">
+                  <div class="col-lg-12">
+                      <div class="card ">
+                          <h4 class="m-b-0 text-white">{{titulo}}</h4>
+                      </div>
+                      <div class="card-body">
+                          <!-- Aquí va el resto de tu contenido -->
+                          <!--- from group  -->
+                          <form [formGroup]="formulario" (ngSubmit)="submitFormulario()">
+                              <div class="texto-centralizado">
+                                  {{formato}}
+                              </div>
+
+                              <div class="row">
+                                  <div class="col-md-6">
+                                      <div class="form-group row">
+                                          <label class="control-label text-right col-md-3">Codigo *</label>
+                                          <div class="col-md-9">
+                                              <input type="text" id="codigo" class="form-control" formControlName="codigo" rows="4" maxlength="4000">
+                                          </div>
+                                          <hr class="m-t-0 m-b-40">
+                                      </div>
+                                  </div>
+                                  <!--/span-->
+                                  <div class="col-md-6">
+                                      <div class="form-group  row">
+                                          <label class="control-label text-right col-md-3">Nombre *</label>
+                                          <div class="col-md-9">
+                                              <input id="Nombre" class="form-control" formControlName="nombre" rows="4" maxlength="4000">
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!--/span-->
+
+                              </div>
+                              <!--/row-->
+                              <div class="row">
+                                  <div class="col-md-6">
+                                      <div class="form-group row">
+                                          <label class="control-label text-right col-md-3">Como *</label>
+                                          <div class="col-md-9">
+                                              <textarea id="como" class="form-control" formControlName="como" rows="4" maxlength="4000"></textarea>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!--/span-->
+                                  <div class="col-md-6">
+                                      <div class="form-group row">
+                                          <label class="control-label text-right col-md-3">Necesito *</label>
+                                          <div class="col-md-9">
+                                              <textarea id="necesito" class="form-control" formControlName="necesito" rows="4" maxlength="4000"></textarea>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!--/span-->
+                                  <!--/span-->
+                                  <div class="col-md-6">
+                                      <div class="form-group row">
+                                          <label class="control-label text-right col-md-3">Para … *</label>
+                                          <div class="col-md-9">
+                                              <textarea id="para" class="form-control" formControlName="para" rows="4" maxlength="4000"></textarea>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!--/span-->
+                                  <!--/span-->
+                                  <div class="col-md-6">
+                                      <div class="form-group  row">
+                                          <label class="control-label text-right col-md-3">Criterios de aceptación *</label>
+                                          <div class="col-md-9">
+                                              <textarea id="criteriosAceptacion" class="form-control" formControlName="criteriosAceptacion" rows="4" maxlength="4000"></textarea>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!--/span-->
+                                  <!--/span-->
+                                  <div class="col-md-6">
+                                      <div class="form-group  row">
+                                          <label class="control-label text-right col-md-3">Requerimientos no funcionales - Volumetría *</label>
+                                          <div class="col-md-9">
+                                              <textarea id="requerimientosNoFuncionales" class="form-control" formControlName="requerimientosNoFuncionales" rows="4" maxlength="4000"></textarea>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!--/span-->
+                                  <!--/span-->
+                                  <div class="col-md-6">
+                                      <div class="form-group  row">
+                                          <label class="control-label text-right col-md-3">Datos de entrada </label>
+                                          <div class="col-md-9">
+                                              <textarea id="datosEntrada" class="form-control" formControlName="datosEntrada" rows="4" maxlength="4000"></textarea>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!--/span-->
+                                  <!--/span-->
+                                  <div class="col-md-6">
+                                      <div class="form-group  row">
+                                          <label class="control-label text-right col-md-3">Datos de entrada </label>
+                                          <div class="col-md-9">
+                                              <textarea id="datosEntrada" class="form-control" formControlName="datosEntrada" rows="4" maxlength="4000"></textarea>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!--/span-->
+                                  <!--/span-->
+                                  <div class="col-md-6">
+                                      <div class="form-group  row">
+                                          <label class="control-label text-right col-md-3">Datos de salida </label>
+                                          <div class="col-md-9">
+                                              <textarea id="datosSalida" class="form-control" formControlName="datosSalida" rows="4" maxlength="4000"></textarea>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!--/span-->
+                                  <!--/span-->
+                                  <div class="col-md-6">
+                                      <div class="form-group  row">
+                                          <label class="control-label text-right col-md-3">Servicios </label>
+                                          <div class="col-md-9">
+                                              <textarea id="servicios" class="form-control" formControlName="servicios" rows="4" maxlength="4000"></textarea>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!--/span-->
+                                  <!--/span-->
+                                  <div class="col-md-6">
+                                      <div class="form-group  row">
+                                          <label class="control-label text-right col-md-3">Notas </label>
+                                          <div class="col-md-9">
+                                              <textarea id="notas" class="form-control" formControlName="notas" rows="4" maxlength="4000"></textarea>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!--/span-->
+                                  <!--/span-->
+                                  <div class="col-md-6">
+                                      <div class="form-group  row">
+                                          <label class="control-label text-right col-md-3">Disponibilidad </label>
+                                          <div class="col-md-9">
+                                              <textarea id="disponibilidad" class="form-control" formControlName="disponibilidad" rows="4" maxlength="4000"></textarea>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!--/span-->
+                                  <!--/span-->
+                                  <div class="col-md-6">
+                                      <div class="form-group  row">
+                                          <label class="control-label text-right col-md-3">Funcionalidad </label>
+                                          <div class="col-md-9">
+                                              <textarea id="funcionalidad" class="form-control" formControlName="funcionalidad" rows="4" maxlength="4000"></textarea>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!--/span-->
+                                  <!--/span-->
+                                  <div class="col-md-6">
+                                      <div class="form-group  row">
+                                          <label class="control-label text-right col-md-3">Confidencialidad </label>
+                                          <div class="col-md-9">
+                                              <textarea id="confidencialidad" class="form-control" formControlName="confidencialidad" rows="4" maxlength="4000"></textarea>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!--/span-->
+                                  <!--/span-->
+                                  <div class="col-md-6">
+                                      <div class="form-group  row">
+                                          <label class="control-label text-right col-md-3">PBI </label>
+                                          <div class="col-md-9">
+                                              <input id="pbi" class="form-control" formControlName="pbi" rows="4">
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!--/span-->
+                                  <!--/span-->
+                                  <div class="col-md-6">
+                                      <div class="form-group  row">
+                                          <label class="control-label text-right col-md-3">Cliente </label>
+                                          <div class="col-md-9">
+                                              <textarea id="cliente" class="form-control" formControlName="cliente" rows="4" maxlength="4000"></textarea>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!--/span-->
+                                  <!--/span-->
+                                  <div class="col-md-6">
+                                      <div class="form-group  row">
+                                          <label class="control-label text-right col-md-3">Servicio IT </label>
+                                          <div class="col-md-9">
+                                              <input id="servicioIt" class="form-control" formControlName="servicioIT" rows="4">
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!--/span-->
+
+                                  <!--/span-->
+                                  <div class="col-md-6">
+                                      <div class="form-group  row">
+                                          <label class="control-label text-right col-md-3">Flujo Valor </label>
+                                          <div class="col-md-9">
+                                              <input id="flujoValor" class="form-control" formControlName="flujoValor" rows="4">
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!--/span-->
+                                  <!--/span-->
+                                  <div class="col-md-6">
+                                      <div class="form-group  row">
+                                          <label class="control-label text-right col-md-3">Naturaleza Origen del Dolor </label>
+                                          <div class="col-md-9">
+                                              <textarea id="naturelezaNoveda" class="form-control" formControlName="naturalezaNovedad" rows="4" maxlength="4000"></textarea>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!--/span-->
+                              </div>
+                              <button type="submit" class="btn btn-primary">Enviar</button>
+                          </form>
+
+
+
+                          <!----fin de from group  --->
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
